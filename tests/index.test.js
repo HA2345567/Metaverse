@@ -1,7 +1,6 @@
 
 
-
-const axios = require("axios");
+const axios = require('axios');
 const BACKEND_URL = "https://localhost:3000"
 const WS_URL = "ws://localhost:3001"
  // 🔁 change this to your actual backend URL // Change if needed

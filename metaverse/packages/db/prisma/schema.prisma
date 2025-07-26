@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
 }
 
 datasource db {
@@ -20,6 +19,7 @@ model User {
   password String  
   avatarId String?
   role     Role
+  salt     String
   spaces   Space[]
   avatar   Avatar?   @relation(fields: [avatarId], references: [id])
 }
